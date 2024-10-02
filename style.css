@@ -2459,14 +2459,14 @@ color:#ea4d88;}
 .chevron:before {
  left: 0;
  transform: skewY(30deg);
-		background:#ea4d88
+		background:#ea4d88;
 }
 
 .chevron:after {
  right: 0;
  width: 50%;
  transform: skewY(-30deg);
-		background:#ea4d88
+background:#ea4d88;
 }
 
 @keyframes move-chevron {
