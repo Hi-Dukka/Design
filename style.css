@@ -2437,7 +2437,7 @@ a {
     margin:0 auto;
   }
   
-  a {
+  .sbox a {
     color: #ea4d88;
     position: relative;
     text-decoration: none;
@@ -2452,13 +2452,13 @@ a {
     animation-fill-mode: both;
     width:250px;
       
-        // text element inside
-        span {
+       
+    .sbox span {
         display: block;
         transition: transform 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-    color:#0d6efd} 
+    color: #0d6efd;} 
         
-        // slide text from data-link-title
+       
         &:after {
         content: attr(data-link-alt);
         display: inline;
@@ -2469,11 +2469,11 @@ a {
         right: 0;
         text-align: center; }
         
-        // animation when hovered
+        
         &:hover {
         cursor: grab;
   
-          span {
+        .sbox span {
           transform: translateY(100%); }
           
           &:after {
