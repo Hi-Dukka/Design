@@ -2428,7 +2428,7 @@ a {
 
   $base: 0.6rem;
 
-  .container {
+  .sbox {
    display: flex;
    justify-content: center;
    align-items: center;
