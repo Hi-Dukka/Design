@@ -4,7 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
+ :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -2367,182 +2367,123 @@ margin-top: 60px;
     padding-top: 3px;
 }
 }
-$base: 0.6rem;
-
-.container {
- display: flex;
+.scbhldr
+{
+  display: flex;
  justify-content: center;
  align-items: center;
  width: 500px;
- height: 100vh;
-	margin:0 auto;
+ height:30px;
+ margin: 0 auto;
+ padding-top: 3em;
 }
+.sbox
+{
 
-a {
-  color: #000000;
   position: relative;
   text-decoration: none;
   margin: 2rem;
   font-size: 1rem;
   flex-grow: 1;
-  font-weight: 300;
+  font-weight: 400;
   overflow: hidden;
   display: block;
   text-align: center;
   animation-duration: 1s;
   animation-fill-mode: both;
 	width:250px;
-    
-      // text element inside
-      span {
-      display: block;
-      transition: transform 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); } 
-      
-      // slide text from data-link-title
-      &:after {
-      content: attr(data-link-alt);
-      display: inline;
-      position: absolute;
-      transition: top 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-      top: -100%;
-      left: 0;
-      right: 0;
-      text-align: center; }
-      
-      // animation when hovered
-      &:hover {
-      cursor: grab;
 
-        span {
-        transform: translateY(100%); }
-        
-        &:after {
-        top: 0; }
-      }
-    
-      &:active {
-      animation-name: rubberBand;
-      cursor: grabbing; }
 
-  }
-
-  $base: 0.6rem;
-
-  .sbox {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 500px;
-   height: 100vh;
-    margin:0 auto;
-  }
-  
-  .sbox a {
-    color: #ea4d88;
-    position: relative;
-    text-decoration: none;
-    margin: 2rem;
-    font-size: 1rem;
-    flex-grow: 1;
-    font-weight: 400;
-    overflow: hidden;
+  span {
     display: block;
-    text-align: center;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    width:250px;
-      
-       
-    .sbox span {
-        display: block;
-        transition: transform 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-    color: #0d6efd;} 
-        
-       
-        &:after {
-        content: attr(data-link-alt);
-        display: inline;
-        position: absolute;
-        transition: top 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-        top: -100%;
-        left: 0;
-        right: 0;
-        text-align: center; }
-        
-        
-        &:hover {
-        cursor: grab;
-  
-        .sbox span {
-          transform: translateY(100%); }
-          
-          &:after {
-          top: 0; }
-        }
-      
-        &:active {
-        animation-name: rubberBand;
-        cursor: grabbing; }
-  
-    }
-  
-  .chevron {
-    position: absolute;
-    margin-top: 5em;
-    width: $base * 2.5;
-    height: $base * 0.3;
-    opacity: 0;
-    transform: scale(0.3);
-    animation: move-chevron 3s ease-out infinite;
-  
+    transition: transform 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+color:#ea4d88;} 
     
-  }
-  
-  .chevron:first-child {
-    animation: move-chevron 3s ease-out 1s infinite;
-  }
-  
-  .chevron:nth-child(2) {
-    animation: move-chevron 3s ease-out 2s infinite;
-  }
-  
-  .chevron:before,
-  .chevron:after {
-   content: '';
-   position: absolute;
-   top: 0em;
-   height: 100%;
-   width: 50%;
-  }
-  
-  .chevron:before {
-   left: 0;
-   transform: skewY(30deg);
-      background:#ea4d88
-  }
-  
-  .chevron:after {
-   right: 0;
-   width: 50%;
-   transform: skewY(-30deg);
-      background:#ea4d88
-  }
-  
-  @keyframes move-chevron {
-   25% {
-    opacity: 1;
-    }
-   33.3% {
-    opacity: 1;
-    transform: translateY($base * 3.8);
+
+    &:after {
+    content: attr(data-link-alt);
+    color: #0d6efd;
+    display: inline;
+    position: absolute;
+    transition: top 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    top: -100%;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    
+    
+    &:hover {
+    cursor: pointer;
+
+      span {
+      transform: translateY(100%); }
       
-   }
-   66.6% {
-    opacity: 1;
-    transform: translateY($base * 5.2);
-   }
-   100% {
-    opacity: 0;
-    transform: translateY($base * 8) scale(0.5);
-   }
-  }
+      &:after {
+      top: 0; }
+    }
+  
+    &:active {
+    animation-name: rubberBand;
+    cursor: pointer; }
+}
+
+.chevron {
+  position: absolute;
+	margin-top: 2em;
+  width: 1.5em;
+  height: 0.25em;
+  opacity: 0;
+  transform: scale(0.15);
+  animation: move-chevron 3s ease-out infinite;
+
+	
+}
+
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 1.5s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+ content: '';
+ position: absolute;
+ top: 0em;
+ height: 100%;
+ width: 50%;
+}
+
+.chevron:before {
+ left: 0;
+ transform: skewY(30deg);
+		background:#ea4d88
+}
+
+.chevron:after {
+ right: 0;
+ width: 50%;
+ transform: skewY(-30deg);
+		background:#ea4d88
+}
+
+@keyframes move-chevron {
+ 25% {
+  opacity: 0.5;
+	}
+ /*33.3% {
+  opacity: 0.8;
+  transform: translateY(2.28em);
+		
+ }*/
+ 50% {
+  opacity: 1;
+  transform: translateY(2.1em) scale(0.8);
+ }
+ 100% {
+  opacity: 0;
+  transform: translateY(4em) scale(0.5);
+ }
+}
