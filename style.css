@@ -2400,7 +2400,7 @@ margin-top: 60px;
 
   &:after {
     content: attr(data-link-alt);
-    color: #333;
+    color: #333333;
     display: inline;
     position: absolute;
     transition: top 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
