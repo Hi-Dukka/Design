@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <title>Gopala Krishna Dukka — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="new_styles.css">
+  <style>
+    
+    /* Small resume-specific tweaks */
+    .resume-container { width: 1200px; margin: 150px auto 60px auto; padding: 28px; font-family: 'Inter', sans-serif; font-size: 14px; }
+    .resume-header { display:flex; flex-direction: column; gap: 6px;border-bottom: 1px solid #e5e7eb;}
+    .top-section, .section-left {display: flex; flex-direction: row; justify-content: space-between;}
+    .section-left {justify-content: flex-start; gap: 24px;}
+    .profile-picture{ width: 112px; height: 112px; overflow: hidden; border-radius: 999px; background: url('./images/avatar.png') no-repeat center center; background-size: cover;}
+    .bottom-section, .contact-number, .email, .linkedin, .portfolio {display: flex; flex-direction: row; gap: 32px; color: #717182; font-size: 13px; }
+    .bottom-section {padding: 18px 0px 32px 0px; gap: 24px;}
+    .contact-number, .email, .linkedin, .portfolio{gap:8px; align-items: center;}
+    .resume-body{display: grid; grid-template-columns: 3fr 1fr; gap: 100px; padding-top: 24px;}
+    .summary-section{ padding: 24px 0px; border-bottom: 1px solid #e5e7eb;}
+    .summary-section h3, .experience-section h3{ margin-bottom: 18px; color: #0a243f; font-weight: 600; font-size: 17px;}
+    .summary-section p{color: #0a243f; font-size: 14px; font-weight: 400;}
+    .experience-section h4{margin-bottom: 4px; color: #0a243f; font-weight: 600; font-size: 14px; }
+    .experience-section ul{list-style: none; margin: 0; padding: 12px 0px;}
+    .btn-download{ border-radius: 12px; padding: 8px; font-weight: 400; margin-right: 12px;}
+    
+    
+
+   
+  </style>
+</head>
+<body>
+  <nav class="custom-navbar">
+    <div class="navbar-container">
+      <!-- Logo Section -->
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="logo.svg" alt="Dukka Portfolio" title="Dukka Portfolio">
+        </a>
+      </div>
+            
+      <!-- Navigation Items -->
+      <div class="navbar-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#case-studies" class="nav-link">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a href="visual_design.html" class="nav-link">Visual Design</a>
+          </li>
+        </ul>
+      </div>
+            
+      <!-- Mobile Menu Toggle -->
+      <div class="mobile-menu-toggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+    </div>
+  </nav>
+  <!-- end of NAV -->
+  <div class="resume-container">
+    <div class="resume-header">
+     <div class ="top-section">
+      <div class="section-left">
+        <div class="profile-picture"></div>
+        <div class="name">
+          <h1>Gopala Krishna Dukka</h1>
+          <p>Product & UX Designer</p>
+          <div class="bottom-section">
+            <div class="contact-number"><img src="./images/phone.svg"> +1 (678) 893-2878</div>
+            <div class="email"><img src="./images/email.svg"> gopalakrishnareddydukka8@gmail.com</div>
+            <div class="linkedin"><img src="./images/in.svg">inkedin.com/in/gopaladukka</div>
+            </div>
+        </div>
+        </div>
+        <div class="section-right">
+          <button class="btn-download" id="download-word" onclick="downloadWordDoc()"><img src="./images/doc.png"> </button>
+          <button class="btn-download" id="download-pdf" onclick="downloadPDF()"><img src="./images/pdf.png"></button>
+        </div>
+     </div>
+    
+    </div>
+   
+      <div class="summary-section">
+        <h3>Professional Summary</h3>
+        <p>Strategic and process-driven UX Architect / Lead UX Designer with 16+ years of experience shaping data-driven, human-centered digital products across enterprise and technology domains. I specialize in transforming complex systems and datasets into intuitive, visually compelling, and scalable experiences through design thinking, research, and storytelling. Passionate about solving real-world problems that blend clarity, functionality, and emotion, I bridge business vision and user needs to craft products that are insightful, accessible, and impactful. Known for elevating design maturity within cross-functional teams, I thrive on turning complexity into simplicity—and ideas into meaningful digital experiences that drive results.</p>
+      </div>
+      <div class="resume-body">
+      <div class="experience-section">
+        <h3>Experience</h3>
+        <div class="spacer10">
+          <h4>STARR Companies - Senior User Experience Designer (Technical Analyst)
+          </h4>
+          <p class="text-sm text-muted">Jan 2025 — Nov 2025 | Alpharetta GA, USA</p>
+          <ul>
+            <li>
+              Delivering polished UI, component layouts, and interaction behaviors in Figma, ensuring design clarity and development-ready output. Building a scalable Design System in Figma with reusable components, structured using design tokens for color, spacing, grid, and typography.
+              </li>
+          </ul>
+        </div>
+          <div class="spacer10">
+            <h4>Subaru of New England, Boston USA - User Experience (UX Designer) Architect</h4>
+            <p class="text-sm text-muted">Jan 2024 — Jan 2025 | Boston MA, USA</p>
+            <ul>
+              <li>Spearheaded end-to-end UX for a digital transformation initiative, designing multi-platform workflows and interfaces that improved efficiency and usability. Acted as the bridge between business strategy, design execution, and offshore development teams.</li>
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Evoke Technologies — UX Manager / Experience Architect</h4>
+            <p class="text-sm text-muted">July 2019 — January 2024 | Delaware, USA</p>
+            <ul>
+              <li>Defined UX vision and architectural frameworks for enterprise systems, ensuring consistency and scalability across global teams. Led research, design governance, and mentoring initiatives to elevate design maturity and product usability.</li>
+            
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Shell Technology Center</h4>
+            <p class="text-sm text-muted">April 2018 – June 2019 | Houston TX, USA</p>
+            <ul>
+              <li>Collaborated with researchers, service designers, and cross-functional teams to deliver user-centric, accessible, and visually refined experiences across web, desktop, and mobile platforms.</li>
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Ernst & Young — UX/UI Designer</h4>
+            <p class="text-sm text-muted"> June 2016 – March 2018 | Alpharetta GA, USA</p>
+            <ul>
+              <li>
+                Partnered with Scrum teams to deliver interaction design assets—task flows, wireframes, and usability reports—ensuring design clarity and efficiency.
+                Conducted heuristic evaluations, usability testing, and design documentation, translating insights into actionable UI and interaction improvements.</li>
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Hexagon Capability Center India — UX Consultant</h4>
+            <p class="text-sm text-muted">September 2014 – March 2016 | Hyderabad, India</p>
+            <ul>
+              <li>Led the redesign of SmartPlant Fusion, improving usability, learnability, and user engagement through new interaction paradigms. </li>
+            
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Microsoft Visio (via Cognizant) — Visual Designer</h4>
+            <p class="text-sm text-muted">May 2012 – August 2014
+              | Hyderabad, India</p>
+            <ul>
+              <li>Collaborated with design and development teams to define visual guidelines and shape libraries for core diagram categories.</li>
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Pyramid SoftSol</h4>
+            <p class="text-sm text-muted">April 2011 – April 2012 | Hyderabad, India</p>
+            <ul>
+              <li>Collaborated with product and development teams to design visually engaging web interfaces that improved usability and brand consistency.</li>
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Pixelloid (VFX Company)</h4>
+            <p class="text-sm text-muted">November 2010 – March 2011 | Hyderabad, India</p>
+            <ul>
+              <li>Collaborated with the motion graphics team on concept ideation and visual storytelling for film and promotional content.
+               </li>
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Gaian Solutions India Pvt. Ltd</h4>
+            <p class="text-sm text-muted">November 2006 – December 2008 | Hyderabad, India</p>
+            <ul>
+              <li></li>Directed UX and interaction design for 30+ IPTV and web applications, translating user needs into seamless, visually cohesive, and scalable digital experiences.</li>
+            </ul>
+          </div>
+          <div class="spacer10">
+            <h4>Sand Soft Solutions Pvt. Ltd.</h4>
+            <p class="text-sm text-muted">June 2005 – October 2006 | Vizag, India</p>
+            <ul>
+              <li>Collaborated with product teams to gather requirements, create wireframes, and design web application interfaces.</li>
+            </ul>
+          </div>
+         
+      </div>
+      <div class="others">
+        <div class="spacer30">        
+          <h3>Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">UX Research</span>
+            <span class="badge">Personas</span>
+            <span class="badge">Information Architecture</span>
+            <span class="badge">Heuristic Analysis</span>
+            <span class="badge">User Journeys & Task Flows</span>
+            <span class="badge">Wireframes & Prototypes</span>
+            <span class="badge">Visual Design</span>
+            <span class="badge">Prototyping</span>
+            <span class="badge">Interaction Design</span>
+            <span class="badge">User Interface Design</span>
+            <span class="badge">Usability Testing</span>
+            <span class="badge">Motion Design</span>
+            <span class="badge">Vibe Coding</span>
+            <span class="badge">Design Systems</span>
+          </div>  
+        </div>
+        <div class="spacer30">  
+          <h3>Tools</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">Figma</span>
+            <span class="badge">Adobe XD</span>
+            <span class="badge">Adobe Photoshop</span>
+            <span class="badge">Adobe Illustrator</span>
+            <span class="badge">Adobe After Effects</span>
+            <span class="badge">Sketch</span>
+          </div>  
+      </div>
+      <div class="spacer30">  
+        <h3>Certifications</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">Certified Usability Analyst (CUA)</span>
+          <span class="badge">Interaction Design Foundation (IDF)</span>
+        </div>  
+    </div>
+    </div>
+    </div>
+  </div>
+  
+   <!-- Footer -->
+   <footer class="site-footer">
+    <div class="footer-inner">
+        <h2 class="footer-title">Thank You for viewing my resume.</h2>
+        <p class="footer-contact">mailtodukka@gmail.com</p>
+
+        <div class="footer-icons" aria-hidden="false">
+                <a class="footer-icon" href="https://www.linkedin.com/in/gopaldukka/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <span class="icon-circle"><img src="./images/Linkedin@2x.svg" alt="LinkedIn" class="footer-img"></span>
+                </a>
+                <a class="footer-icon" href="https://dribbble.com/stagontherocks" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
+                    <span class="icon-circle"><img src="./images/Dribbble@2x.svg" alt="Dribble" class="footer-img"></span>
+                </a>
+                <a class="footer-icon" href="mailto:mailtodukka@gmail.com" aria-label="Resume">
+                    <span class="icon-circle"><img src="./images/document.svg" alt="Resume" class="footer-img"></span>
+                </a>
+        </div>
+
+        <p class="footer-copy">❤️ Built using VS Code + Copilot</p>
+    </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const navbarNav = document.querySelector('.navbar-nav');
+        
+    if (mobileToggle && navbarNav) {
+      mobileToggle.addEventListener('click', function() {
+        mobileToggle.classList.toggle('active');
+        navbarNav.classList.toggle('active');
+      });
+            
+      // Close mobile menu when clicking on a nav link
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileToggle.classList.remove('active');
+          navbarNav.classList.remove('active');
+        });
+      });
+            
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!mobileToggle.contains(event.target) && !navbarNav.contains(event.target)) {
+          mobileToggle.classList.remove('active');
+          navbarNav.classList.remove('active');
+        }
+      });
+    }
+        
+    // Add subtle shadow to navbar on scroll
+    const navbar = document.querySelector('.custom-navbar');
+    function handleScroll() {
+      if (!navbar) return;
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+  });
+
+  // Download Word Document
+  function downloadWordDoc() {
+    // Path to the Word document - update this path when you add the Word file
+    const wordDocPath = './pdf/Gopala Krishna Reddy UX UI Designer Resume.docx'; // Change to .doc if using .doc format
+    
+    // Create a temporary anchor element to trigger download
+    const link = document.createElement('a');
+    link.href = wordDocPath;
+    link.download = 'Gopala Krishna Reddy UX UI Designer Resume.docx'; // Filename for download
+    link.style.display = 'none';
+    
+    // Append to body, click, and remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Fallback: if file doesn't exist, try opening in new tab
+    link.onerror = function() {
+      window.open(wordDocPath, '_blank');
+    };
+  }
+
+  // Download PDF Document
+  function downloadPDF() {
+    const pdfPath = './pdf/Gopal_Dukka_resume.pdf';
+    
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.download = 'Gopal_Dukka_resume.pdf';
+    link.style.display = 'none';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  </script>
+</body>
+</html>
